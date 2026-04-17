@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Get travel insurance from Holiday Extras. Award-winning cover with price promise, flight delay cover, and 24/7 GP access included.">
-  <title>Travel Insurance - Holiday Extras</title>
+  <meta name="description" content="Save 10% on Holiday Extras Travel Insurance. Award-winning cover trusted by millions with price match promise, from 10p per day.">
+  <title>Save 10% on Travel Insurance - Holiday Extras</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
   <style>
@@ -59,232 +59,333 @@
       }
     }
 
-    .bold-h2 {
-      font-size: 28px;
+    .display-4 {
+      font-size: 36px;
       font-weight: 800;
-      -webkit-text-stroke: 0.5px currentColor;
-      line-height: 38.2px;
-      margin-bottom: 23px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .display-4 {
+        font-size: 28px;
+      }
+    }
+
+    .text-primary {
+      color: #542e91;
+    }
+
+    .h1, h1 {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 20px;
       color: #542e91;
     }
 
     @media (max-width: 767px) {
-      .bold-h2 {
-        font-size: 24px;
-        line-height: 32.7px;
+      .h1, h1 {
+        font-size: 26px;
       }
     }
 
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #542e91;
+    }
+
+    @media (max-width: 767px) {
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    a {
+      color: #542e91;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #4b287f;
+    }
+
+    .mb-4 {
+      margin-bottom: 40px;
+    }
+
+    .mt-4 {
+      margin-top: 20px;
+    }
+
+    .mb-2 {
+      margin-bottom: 8px;
+    }
+
+    .mb-3 {
+      margin-bottom: 15px;
+    }
+
+    .py-3 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .py-4 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .px-3 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .mt-0 {
+      margin-top: 0;
+    }
+
+    /* Button Styles */
     .hx-cta-btn-1 {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 4px;
+      gap: 8px;
       min-width: 220px;
       max-width: 360px;
-      height: 62px;
-      padding: 12px 24px;
+      padding: 16px 32px;
       border-radius: 8px;
-      border: 1px solid #542E91;
+      border: none;
       background: #542E91;
       color: #fff !important;
-      font-weight: 500;
-      font-size: 24px;
+      font-weight: 700;
+      font-size: 20px;
       text-decoration: none !important;
       cursor: pointer;
-      transition: filter .15s ease, transform .1s ease;
-      margin: 0 auto;
+      transition: background .2s ease;
+      margin: 20px 0;
     }
 
-    .hx-cta-btn-1:hover,
-    .hx-cta-btn-1:focus {
+    .hx-cta-btn-1:hover {
       background-color: #4b287f !important;
-      border-color: #4b287f !important;
       color: #fff !important;
-      text-decoration: none !important;
-    }
-
-    .hx-cta-btn-1:active {
-      transform: translateY(1px);
     }
 
     @media (max-width: 767px) {
       .hx-cta-btn-1 {
-        font-size: 22px;
-        max-width: 420px;
-        width: calc(100% - 24px);
-      }
-    }
-
-    .hx-cta-btn-2 {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      height: 32px;
-      min-height: 32px;
-      padding: 20px 50px;
-      border-radius: 8px;
-      border: 1px solid #542E91;
-      background: #FFF;
-      text-decoration: none !important;
-      cursor: pointer;
-      box-sizing: border-box;
-      width: fit-content;
-      max-width: 100%;
-      white-space: nowrap;
-    }
-
-    .hx-cta-btn-2 .cta-text {
-      color: #542E91;
-      font-family: Nunito, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-      text-decoration: none;
-    }
-
-    .hx-cta-btn-2 i {
-      color: #542E91;
-      font-size: 16px;
-    }
-
-    .hx-cta-btn-2:hover,
-    .hx-cta-btn-2:focus-visible {
-      background: rgba(84, 46, 145, 0.06);
-      outline: none;
-    }
-
-    @media (max-width: 767px) {
-      .hx-cta-btn-2 {
-        display: flex;
         width: 100%;
-        justify-content: center;
-      }
-    }
-
-    .hx-cover-level-table {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
-
-    .hx-cover-level-table .hx-clt-card {
-      border: 1px solid #D8D8D8;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #fff;
-      width: 100%;
-    }
-
-    .hx-cover-level-table .hx-clt-row {
-      display: grid;
-      grid-template-columns: 1.05fr 1.25fr 1.6fr;
-      gap: 0;
-      align-items: center;
-    }
-
-    .hx-cover-level-table .hx-clt-cell {
-      padding: 14px 16px;
-      font-size: 20px;
-      line-height: 1.35;
-      color: #222;
-    }
-
-    .hx-cover-level-table .hx-clt-head {
-      background: #f6f6f6;
-      font-weight: 700;
-    }
-
-    .hx-cover-level-table .hx-clt-row:not(.hx-clt-head) {
-      border-top: 1px solid #ededed;
-    }
-
-    .hx-cover-level-table .hx-clt-cover-title {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 6px;
-    }
-
-    .hx-cover-level-table .hx-clt-level {
-      font-weight: 700;
-    }
-
-    .hx-cover-level-table .hx-clt-list {
-      margin: 0;
-      padding-left: 18px;
-    }
-
-    .hx-cover-level-table .hx-clt-list li {
-      margin: 3px 0;
-    }
-
-    .hx-cover-level-table .hx-clt-mobile-highlight {
-      display: none;
-      color: #333;
-    }
-
-    .hx-emoji-img {
-      width: 24px;
-      height: 24px;
-    }
-
-    @media (max-width: 767px) {
-      .hx-cover-level-table .hx-clt-row {
-        grid-template-columns: 1fr 1fr;
-      }
-      .hx-cover-level-table .hx-clt-highlights-col {
-        display: none;
-      }
-      .hx-cover-level-table .hx-clt-mobile-highlight {
-        display: block;
-      }
-      .hx-cover-level-table .hx-clt-cell {
-        padding: 14px 14px;
+        max-width: 100%;
         font-size: 18px;
       }
     }
 
+    /* Grid System */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+
+    .col-xs-12 {
+      width: 100%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .col-sm-6 {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .col-md-4 {
+        width: 33.333%;
+      }
+    }
+
+    /* Panel Styles */
     .panel {
-      margin-bottom: 15px;
       background-color: #fff;
       border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-
-    .panel-heading {
-      padding: 15px;
-      cursor: pointer;
-      background-color: #f5f5f5;
-      user-select: none;
-    }
-
-    .panel-heading h2 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .panel-heading i {
-      transition: transform 0.3s;
-    }
-
-    .panel-heading.collapsed i {
-      transform: rotate(-90deg);
+      border-radius: 8px;
+      overflow: hidden;
+      height: 100%;
     }
 
     .panel-body {
-      padding: 15px;
-      display: none;
+      padding: 20px;
     }
 
-    .panel-body.show {
+    .shadow {
+      box-shadow: rgba(50, 50, 93, .05) 0px 0.25rem 0.5rem 0, rgba(0, 0, 0, .05) 0px 0.25rem 0.5rem -0.25rem;
+    }
+
+    .shadow-strong {
+      box-shadow: rgba(50, 50, 93, .075) 0px 0.625rem 1.25rem 0, rgba(0, 0, 0, .075) 0px 0.375rem 0.625rem -0.375rem;
+    }
+
+    .shadow-stronger {
+      box-shadow: rgba(50, 50, 93, .1) 0px 1rem 2rem 0, rgba(0, 0, 0, .1) 0px 0.5rem 1rem -0.5rem;
+    }
+
+    /* Utility Classes */
+    .position-relative {
+      position: relative;
+    }
+
+    .w-100 {
+      width: 100%;
       display: block;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .align-items-start {
+      align-items: flex-start;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    .list-unstyled {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list-icon {
+      display: inline-block;
+      width: 1em;
+      margin: 0.375em 0.5em 0 0;
+      color: #542e91;
+    }
+
+    /* Pills */
+    .pill {
+      background: #fff;
+      display: inline-flex;
+      line-height: 1;
+      padding: 0.4em 0.8em;
+      border: 0.15em solid;
+      border-radius: 99em;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .image .pill {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+    }
+
+    .text-success {
+      color: #28a745;
+      border-color: #28a745;
+    }
+
+    .text-info {
+      color: #17a2b8;
+      border-color: #17a2b8;
+    }
+
+    .text-warning {
+      color: #ffc107;
+      border-color: #ffc107;
+    }
+
+    .text-primary {
+      color: #542e91;
+      border-color: #542e91;
+    }
+
+    .h5 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    /* Promo Box */
+    .promo-box-container {
+      background: #EBF6FF !important;
+      border-radius: 26px;
+      padding: 30px 30px;
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      color: #3d247a;
+    }
+
+    .promo-box-image img {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+
+    .promo-box-content h2 {
+      color: #3d247a;
+      margin-bottom: 15px;
+    }
+
+    .promo-box-content p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .promo-box-btn {
+      background: #542E91;
+      color: #fff;
+      border: none;
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: 600;
+      display: inline-block;
+      transition: background 0.2s ease;
+      text-decoration: none;
+    }
+
+    .promo-box-btn:hover {
+      background: #4b287f;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .promo-box-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+      }
+      .promo-box-content p {
+        font-size: 20px;
+      }
+      .promo-box-image img {
+        width: 160px;
+      }
+      .promo-box-btn {
+        width: 100%;
+      }
+    }
+
+    .lastupdated {
+      opacity: 0.7;
+      font-size: 14px;
     }
 
     hr {
@@ -292,271 +393,240 @@
       border: 0;
       border-top: 1px solid #eee;
     }
+
+    section {
+      margin-bottom: 40px;
+    }
   </style>
 </head>
 <body>
   <div class="hx-page-content">
+    <!-- Hero Section -->
     <section style="padding: 40px 0;">
-      <h1 class="bold-h2">Millions trust Holiday Extras Travel Insurance for clear, easy-to-understand cover and expert help when you need it.</h1>
-      <p>You get friendly, expert support from our Kent-based travel insurance team, plus extra peace of mind with our <a href="/travel-insurance/price-match-promise.html">price promise</a>, £25 instant cash back for <a href="/travel-insurance/flight-delay-cover.html">delayed flights</a> and free <a href="/travel-insurance/anywheregp.html">24/7 GP access</a> wherever you are in the world.</p><br>
-      <div style="text-align: center;">
-        <a href="/insurance-search.html" class="hx-cta-btn-1">
+      <h1 class="display-4 text-primary">Save 10% on Holiday Extras Travel Insurance</h1>
+      <h2 class="text-primary">Trusted by Millions of Travellers <a href="https://www.holidayextras.com/insurance-search.html">Cover from 10p per day**</a></h2>
+
+      <div style="text-align: center; margin: 30px 0;">
+        <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">
           <span>Get Quote</span>
           <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
-      <br>
+
+      <p style="text-align: center;">Get a quote in under 2 minutes online — or call our UK team on <strong>0333 038 9635</strong> (Mon–Fri 9-8, Sat-Sun 9-5).</p>
     </section>
 
+    <!-- Promise Cards Section -->
     <section>
-      <h2 class="bold-h2">We'll look after you</h2>
-      <p>
-        <strong>Choosing the right cover</strong>
-        <br>
-        We make it easy to choose the right level of cover for your trip – no more and no less – with clear explanations in plain English.
-      </p>
-      <p>
-        <strong>Support when it matters</strong>
-        <br>
-       If something goes wrong, you're backed by carefully selected assistance teams, anywhere in the world.
-      </p>
-      <p>
-        <strong>Help if things don't go to plan</strong>
-        <br>
-        If you need to make a claim, we help guide you through it – clearly, fairly, and without fuss.
-      </p>
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-      <span class="cta-text">Get Quote</span>
-      <i class="fa-solid fa-chevron-right"></i>
-    </a>
-    </section>
-    <br>
-
-    <section>
-      <h2 class="bold-h2">Get started with the right cover for your trips. We've got your back every step of the way.</h2>
-      <p>Our highest levels of cover aren't available on comparison sites. We offer three levels of award-winning cover - so you can get the right protection for your holiday, without paying more than you need.</p>
-      <br>
-
-      <!-- Cover level table -->
-      <div class="hx-cover-level-table" role="table" aria-label="Travel insurance cover levels">
-        <div class="hx-clt-card">
-          <!-- Header -->
-          <div class="hx-clt-row hx-clt-head" role="row">
-            <div class="hx-clt-cell" role="columnheader">Cover Level</div>
-            <div class="hx-clt-cell hx-clt-highlights-col" role="columnheader">Highlights</div>
-            <div class="hx-clt-cell" role="columnheader">Covered for</div>
+      <h2 class="mb-4 h1">Let us look after you. We Promise:</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="panel" style="border:0;">
+            <div class="image position-relative">
+              <a href="https://www.holidayextras.com/insurance-search.html">
+                <img fetchpriority="high" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/flextras-surf-1.png" alt="Holiday Extras Travel Insurance Flexible Bookings" />
+              </a>
+              <span class="pill h5 text-success mt-0 mb-2">
+                Free Cancellation
+              </span>
+            </div>
+            <div class="px-3 py-3">
+              <h3>Booking freedom</h3>
+              <p>You can cancel your policy for free within 14 days of booking, as long as your journey hasn't started and you haven't made a claim.</p>
+            </div>
           </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="panel" style="border:0;">
+            <div class="image position-relative">
+              <a href="https://www.holidayextras.com/insurance-search.html">
+                <img fetchpriority="high" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/holiday-extras-office.png" alt="Holiday Extras Office"/>
+              </a>
+              <span class="pill h5 text-info mt-0 mb-2">
+                Established. Trusted.
+              </span>
+            </div>
+            <div class="px-3 py-3">
+              <h3>40 years' experience</h3>
+              <p>With over 40 years experience and half a million policies sold annually it's safe to say we know a thing or two about travel insurance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="panel" style="border:0;">
+            <div class="image position-relative">
+              <a href="https://www.holidayextras.com/insurance-search.html">
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/holiday-extras-awards.png" alt="Holiday Extras Awards"/>
+              </a>
+              <span class="pill h5 text-primary mt-0 mb-2">
+                Best Insurance Provider 2025
+              </span>
+            </div>
+            <div class="px-3 py-3">
+              <h3>Award-winning cover</h3>
+              <p>Voted the Best Insurance Provider at the 2025 Globe Travel Awards (our 16th consecutive year!) our proven track record means we're a name you can trust.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Bronze -->
-          <div class="hx-clt-row" role="row">
-            <div class="hx-clt-cell hx-clt-cover" role="cell">
-              <div class="hx-clt-cover-title">
-                <img src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/seo-images/insurance/bronze-emoji.jpg" alt="Bronze cover level" class="hx-emoji-img" />
-                <span class="hx-clt-level">Bronze</span>
-              </div>
-              <div class="hx-clt-mobile-highlight">
-                Essential cover, with the important bits taken care of.
-              </div>
+    <!-- Price Match Promise Promo Box -->
+    <section>
+      <div class="promo-box-container">
+        <div class="promo-box-image">
+          <img loading="lazy" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/insurance/price-match/price-match-logo.png" alt="Holiday Extras Price Match Promise" />
+        </div>
+        <div class="promo-box-content">
+          <h2>Price Match Promise</h2>
+          <p>
+            Found the same policy cheaper somewhere else? No problem, just get in touch, and we'll happily match it with our <strong>Price Match Promise</strong>.
+          </p>
+          <p>
+            That way, you can book with confidence, knowing you're getting the very best deal <em>and</em> our award-winning service.
+          </p>
+          <a href="https://www.holidayextras.com/travel-insurance/price-match-promise.html" data-track-name="price_match_promo" data-track-value="insurance_home_price_match_cta">
+            <button class="promo-box-btn">
+              Learn more
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tailored Solution Section -->
+    <section>
+      <div style="text-align: center; margin: 30px 0;">
+        <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">
+          <span>Get Quote</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+      <h2 class="h1">Your tailored solution for hassle-free adventures</h2>
+      <p>Choosing the right travel insurance for your own personal needs is an important decision that can give you that all-too valuable peace of mind when travelling. That's why, at Holiday Extras we've put together three levels of cover that can be tailored specifically to your individual needs. You can choose to take out a Single or Annual policy on any level of insurance so finding the perfect policy is hassle-free.</p>
+    </section>
+
+    <!-- Cover at a Glance Section -->
+    <section class="py-4">
+      <h2 class="h1">Our cover at a glance</h2>
+      <p>We have a wide range of policy levels and optional add-ons to personally customise your cover. Whether it's gadgets, winter sports or extra sporting activities, your cover is as unique as you.</p>
+    </section>
+
+    <!-- Cover Level Cards -->
+    <section>
+      <div class="row">
+        <!-- Silver Card -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="panel panel-body shadow-strong" style="border:0;">
+            <div class="position-relative">
+              <a href="https://www.holidayextras.com/insurance-search.html">
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/silver.png" alt="Silver Cover"/>
+              </a>
             </div>
-            <div class="hx-clt-cell hx-clt-highlights-col" role="cell">
-              Essential cover, with the important bits taken care of.
-            </div>
-            <div class="hx-clt-cell" role="cell">
-              <ul class="hx-clt-list">
-                <li>£15m emergency medical cover</li>
-                <li>£1000 trip cancellation</li>
-                <li>£2000 lost baggage</li>
+            <div class="py-3">
+              <h3><a href="https://www.holidayextras.com/insurance-search.html">Silver Cover</a></h3>
+              <div class="d-flex flex-column align-items-start mb-3" style="margin-top: 15px;">
+                <span class="pill h5 text-warning mt-0 mb-2">Defaqto 4* Rated</span>
+                <span class="pill h5 text-primary mt-0">Best Insurance Provider 2025</span>
+              </div>
+              <p>Our most popular policy with enhanced cancellation of £2,500. Only a £99 excess (waiver available).</p>
+              <p class="mt-4"><strong>Every traveller benefits from:</strong></p>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-medkit"></i> Up to <strong>£10,000,000</strong> Medical Cover, with 24/7 support from our team of experts.</span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-ban"></i> Cancellation cover starting today, up to <strong>£2,500</strong></span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-suitcase"></i> Baggage cover up to <strong>£1,500</strong></span>
+                </li>
               </ul>
             </div>
           </div>
+        </div>
 
-          <!-- Silver -->
-          <div class="hx-clt-row" role="row">
-            <div class="hx-clt-cell hx-clt-cover" role="cell">
-              <div class="hx-clt-cover-title">
-                <img src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/seo-images/insurance/silver-emoji.jpg" alt="Silver cover level" class="hx-emoji-img" />
-                <span class="hx-clt-level">Silver</span>
-              </div>
-              <div class="hx-clt-mobile-highlight">
-                A step up in cover, with added peace of mind.
-              </div>
+        <!-- Gold Card -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="panel panel-body shadow-stronger" style="border:0;">
+            <div class="position-relative">
+              <a href="https://www.holidayextras.com/insurance-search.html">
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/gold.png" alt="Gold Cover"/>
+              </a>
             </div>
-            <div class="hx-clt-cell hx-clt-highlights-col" role="cell">
-              A step up in cover, with added peace of mind.
-            </div>
-            <div class="hx-clt-cell" role="cell">
-              <ul class="hx-clt-list">
-                <li>£20m emergency medical cover</li>
-                <li>£2500 trip cancellation</li>
-                <li>£3000 lost baggage</li>
+            <div class="py-3">
+              <h3><a href="https://www.holidayextras.com/insurance-search.html">Gold Cover</a></h3>
+              <div class="d-flex flex-column align-items-start mb-3" style="margin-top: 15px;">
+                <span class="pill h5 text-warning mt-0 mb-2">Defaqto 5* Rated</span>
+                <span class="pill h5 text-primary mt-0">Best Insurance Provider 2025</span>
+              </div>
+              <p>Our most comprehensive cover with our lowest excess of £50 (waiver available) and a priority claims process.</p>
+              <p class="mt-4"><strong>Every traveller benefits from:</strong></p>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-medkit"></i> Up to <strong>Unlimited***</strong> Medical Cover, with 24/7 support from our team of experts.</span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-ban"></i> Cancellation cover starting today, up to <strong>£5,000***</strong></span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-suitcase"></i> Baggage cover up to <strong>£2,000</strong></span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-paw"></i> Exclusive to Gold Cover Pet Cover up to <strong>£500</strong></span>
+                </li>
               </ul>
             </div>
           </div>
+        </div>
 
-          <!-- Gold -->
-          <div class="hx-clt-row" role="row">
-            <div class="hx-clt-cell hx-clt-cover" role="cell">
-              <div class="hx-clt-cover-title">
-                <img src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/seo-images/insurance/gold-emoji.jpg" alt="Gold cover level" class="hx-emoji-img" />
-                <span class="hx-clt-level">Gold</span>
-              </div>
-              <div class="hx-clt-mobile-highlight">
-                Our highest level of cover, with the lowest excess.
-              </div>
+        <!-- Bronze Card -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="panel panel-body shadow" style="border:0;">
+            <div class="position-relative">
+              <a href="https://www.holidayextras.com/insurance-search.html">
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/bronze.png" alt="Bronze Cover"/>
+              </a>
             </div>
-            <div class="hx-clt-cell hx-clt-highlights-col" role="cell">
-              Our highest level of cover, with the lowest excess.
-            </div>
-            <div class="hx-clt-cell" role="cell">
-              <ul class="hx-clt-list">
-                <li>Unlimited emergency medical cover</li>
-                <li>£5000 trip cancellation</li>
-                <li>£5000 lost baggage</li>
+            <div class="py-3">
+              <h3><a href="https://www.holidayextras.com/insurance-search.html">Bronze Cover</a></h3>
+              <div class="d-flex flex-column align-items-start mb-3" style="margin-top: 15px;">
+                <span class="pill h5 text-warning mt-0 mb-2">Defaqto 3* Rated</span>
+                <span class="pill h5 text-primary mt-0">Best Insurance Provider 2025</span>
+              </div>
+              <p>Everything essential to cover you for your trip. Just £150 excess (waiver available).</p>
+              <p class="mt-4"><strong>Every traveller benefits from:</strong></p>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-medkit"></i> Up to <strong>£10,000,000</strong> Medical Cover, with 24/7 support from our team of experts.</span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-ban"></i> Cancellation cover starting today, up to <strong>£1,000</strong></span>
+                </li>
+                <li class="d-flex mb-3">
+                  <span><i class="list-icon fa fa-suitcase"></i> Baggage cover up to <strong>£500</strong></span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <br>
-      <p>All our policies include essential medical cover in case of illness or injury while you're away. And with AnywhereGP, you'll have access to 24/7 non-emergency medical treatment and advice abroad. <a href="/travel-insurance/compare-cover.html">See the full benefits table</a>.</p>
-    </section>
 
-    <div style="text-align: center; margin: 20px 0;">
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-        <span class="cta-text">Get Quote</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-
-    <section>
-      <br>
-      <h2 class="bold-h2"><a href="/travel-insurance/annual-travel-insurance.html">Annual Travel Insurance</a></h2>
-      <p>One policy that covers all your UK and overseas trips for 12 months</p>
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-        <span class="cta-text">Get Quote</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-      <hr>
-      <h2 class="bold-h2"><a href="/travel-insurance/single-trip.html">Single Travel Insurance</a></h2>
-      <p>Cover for one trip, from the moment you book to coming home</p>
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-        <span class="cta-text">Get Quote</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-      <hr>
-      <h2 class="bold-h2"><a href="/travel-insurance/cruise.html">Cruise Travel Insurance</a></h2>
-      <p>Specialist cover for your cruise, at sea and on shore</p>
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-        <span class="cta-text">Get Quote</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-      <hr>
-      <h2 class="bold-h2"><a href="/travel-insurance/medical-conditions">Medical Travel Insurance</a></h2>
-      <p>Extra reassurance when your health matters most</p>
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-        <span class="cta-text">Get Quote</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </section>
-    <hr>
-
-    <section>
-      <p><b>Extras you won't find anywhere else. Included as standard. Built to have your back.</b></p>
-      <p>
-        <b><a href="/travel-insurance/price-match-promise.html">A price promise that protects your pocket</a></b>
-        – find it cheaper, and we'll refund the difference, up to £100.
-      </p>
-      <p>
-        <b><a href="/travel-insurance/flight-delay-cover.html">Backup when flights don't go to plan</a></b>
-        – £25 instant cash back, or access to an airport lounge.
-      </p>
-      <p>
-        <b><a href="/travel-insurance/anywheregp.html">Medical support, anytime, anywhere</a></b>
-        – free GP access, anywhere in the world 24/7.
-      </p>
-      <a href="/insurance-search.html" class="hx-cta-btn-2">
-        <span class="cta-text">Get Quote</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </section>
-    <br>
-
-    <div itemscope itemtype="https://schema.org/FAQPage"><br>
-      <h2 class="bold-h2" id="faq">Your questions, answered.</h2><br>
-      <div>
-        <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="panel-heading collapsed" onclick="togglePanel(this)" aria-expanded="false">
-            <h2><i class="fa fa-lg fa-angle-down"></i><span itemprop="name">What does travel insurance cover?</span></h2>
-          </div>
-          <div class="panel-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Travel insurance protects you financially from certain unexpected events that could happen while you're away. For example, lost baggage, holiday cancellation or emergency medical expenses. For more details on what's covered, take a look at our <a href="https://www.holidayextras.com/travel-insurance/compare-cover.html">cover-level page</a>.</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="panel-heading collapsed" onclick="togglePanel(this)" aria-expanded="false">
-            <h2><i class="fa fa-lg fa-angle-down"></i><span itemprop="name">How far in advance should I buy travel insurance?</span></h2>
-          </div>
-          <div class="panel-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Aim to <b>purchase insurance as soon as you can</b> after booking your trip. This means that you will be protected if you have to cancel your holiday unexpectedly before your trip.</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="panel-heading collapsed" onclick="togglePanel(this)" aria-expanded="false">
-            <h2><i class="fa fa-lg fa-angle-down"></i><span itemprop="name">Can I get travel insurance if I have a medical condition?</span></h2>
-          </div>
-          <div class="panel-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">We don't think having a <a href="https://www.holidayextras.com/travel-insurance/medical-conditions.html">medical condition</a> should make getting travel insurance difficult. That's why we consider all medical conditions.</p>
-            <p itemprop="text">Our expert team are on hand to guide you through the quote process with absolute confidentiality and care. This will help us to determine if we're able to provide you with cover.</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="panel-heading collapsed" onclick="togglePanel(this)" aria-expanded="false">
-            <h2><i class="fa fa-lg fa-angle-down"></i><span itemprop="name">How can I get cheaper travel insurance?</span></h2>
-          </div>
-          <div class="panel-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">The cost of travel insurance can be influenced by a variety of different factors. Your age, how long your trip is, your medical history and where you are travelling to can all impact the price of a policy. Here are some tips to keep the cost down:</p><br>
-            <p itemprop="text"><b>Choose a higher excess</b> - Opting to pay a higher excess can lower the price of your policy. Just make sure you are able to pay the excess amount in the event of a claim.</p>
-            <p itemprop="text"><b>Consider an Annual policy</b> - If you're going away multiple times throughout the year, it can work out cheaper to take out an Annual policy.</p>
-            <p itemprop="text"><b>Choose the right level of cover</b> - Consider whether the cover levels are suitable for you. For example, you may not need £5,000 cancellation cover if you only paid a few hundred for your trip.</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="panel-heading collapsed" onclick="togglePanel(this)" aria-expanded="false">
-            <h2><i class="fa fa-lg fa-angle-down"></i><span itemprop="name">Why choose Holiday Extras?</span></h2>
-          </div>
-          <div class="panel-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">With 40 years experience selling holiday insurance and over half a million policies sold in a single year, it's safe to say we know a thing or two about travel insurance. That's why <a href="https://www.holidayextras.com/about-us/holiday-extras-awards.html">we've won Globe's Best Insurance Provider 16 years running.</a></p>
-            <p itemprop="text">Our team of insurance experts are here to help you through the booking process. Whilst you're away, you'll have access to 24/7 medical assistance, 365 days a year.</p>
-          </div>
-        </div>
+      <div style="text-align: center; margin: 30px 0;">
+        <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">
+          <span>Get Quote</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
       </div>
-    </div>
-    <br>
 
-    <p style="font-size: 15px; color: #666; margin-top: 40px;">*10p per day lead price is based on an individual traveller with an average age of 44 travelling to Europe on a bronze annual policy. Lead price does not include any medical premiums or additional upgrades. Price correct as of 21/01/2026.</p>
+      <div class="lastupdated"></div>
+      <hr>
+
+      <!-- Disclaimers -->
+      <p style="font-size: 16px;">*Policies must be purchased by 31st December 2025 to qualify for the 10% discount. Offers may be withdrawn or changed without notice. 10% off applies to the base rate of travel insurance and additional options added during the booking process and does not apply to any additional premiums for any pre-existing medical condition(s).</p>
+      <p style="font-size: 16px;">**10p per day lead price is based on an individual traveller with an average age of 44 travelling to Europe Inc on a bronze annual policy. Lead price does not include any medical premiums or additional upgrades. Price correct as of 21/01/2026.</p>
+      <p style="font-size: 16px;"><i>***Or as specified on your schedule.</i></p>
+    </section>
   </div>
-
-  <script>
-    function togglePanel(element) {
-      const panelBody = element.nextElementSibling;
-      const isCollapsed = element.classList.contains('collapsed');
-
-      // Close all panels
-      document.querySelectorAll('.panel-heading').forEach(heading => {
-        heading.classList.add('collapsed');
-        heading.nextElementSibling.classList.remove('show');
-      });
-
-      // Open clicked panel if it was closed
-      if (isCollapsed) {
-        element.classList.remove('collapsed');
-        panelBody.classList.add('show');
-      }
-    }
-  </script>
 </body>
 </html>
