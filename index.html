@@ -76,6 +76,18 @@
       color: #542e91;
     }
 
+    .text-success {
+      color: #28a745;
+    }
+
+    .text-info {
+      color: #17a2b8;
+    }
+
+    .text-warning {
+      color: #ffc107;
+    }
+
     .h1, h1 {
       font-size: 32px;
       font-weight: 800;
@@ -108,6 +120,11 @@
       font-weight: 700;
       margin-bottom: 10px;
       color: #333;
+    }
+
+    .h5 {
+      font-size: 16px;
+      font-weight: 600;
     }
 
     a {
@@ -152,6 +169,35 @@
 
     .mt-0 {
       margin-top: 0;
+    }
+
+    .w-100 {
+      width: 100%;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    .align-items-start {
+      align-items: flex-start;
+    }
+
+    .position-relative {
+      position: relative;
+    }
+
+    .list-unstyled {
+      list-style: none;
+      padding: 0;
     }
 
     /* Button Styles */
@@ -201,13 +247,13 @@
       margin-bottom: 20px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       .col-sm-6 {
         width: 50%;
       }
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .col-md-4 {
         width: 33.333%;
       }
@@ -215,7 +261,7 @@
 
     /* Panel Styles */
     .panel {
-      background-color: #fff;
+      background: #fff;
       border: 1px solid #ddd;
       border-radius: 8px;
       overflow: hidden;
@@ -226,66 +272,26 @@
       padding: 20px;
     }
 
-    .shadow {
+    .panel.shadow {
       box-shadow: rgba(50, 50, 93, .05) 0px 0.25rem 0.5rem 0, rgba(0, 0, 0, .05) 0px 0.25rem 0.5rem -0.25rem;
     }
 
-    .shadow-strong {
+    .panel.shadow-strong {
       box-shadow: rgba(50, 50, 93, .075) 0px 0.625rem 1.25rem 0, rgba(0, 0, 0, .075) 0px 0.375rem 0.625rem -0.375rem;
     }
 
-    .shadow-stronger {
+    .panel.shadow-stronger {
       box-shadow: rgba(50, 50, 93, .1) 0px 1rem 2rem 0, rgba(0, 0, 0, .1) 0px 0.5rem 1rem -0.5rem;
     }
 
-    /* Utility Classes */
-    .position-relative {
-      position: relative;
-    }
-
-    .w-100 {
-      width: 100%;
-      display: block;
-    }
-
-    .d-flex {
-      display: flex;
-    }
-
-    .flex-column {
-      flex-direction: column;
-    }
-
-    .align-items-start {
-      align-items: flex-start;
-    }
-
-    .align-items-center {
-      align-items: center;
-    }
-
-    .list-unstyled {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .list-icon {
-      display: inline-block;
-      width: 1em;
-      margin: 0.375em 0.5em 0 0;
-      color: #542e91;
-    }
-
-    /* Pills */
+    /* Pill Styles */
     .pill {
       background: #fff;
       display: inline-flex;
       line-height: 1;
-      padding: 0.4em 0.8em;
-      border: 0.15em solid;
+      padding: 0.25em 0.625em;
+      border: 0.125em solid;
       border-radius: 99em;
-      font-size: 14px;
-      font-weight: 600;
     }
 
     .image .pill {
@@ -294,29 +300,11 @@
       bottom: 1rem;
     }
 
-    .text-success {
-      color: #28a745;
-      border-color: #28a745;
-    }
-
-    .text-info {
-      color: #17a2b8;
-      border-color: #17a2b8;
-    }
-
-    .text-warning {
-      color: #ffc107;
-      border-color: #ffc107;
-    }
-
-    .text-primary {
-      color: #542e91;
-      border-color: #542e91;
-    }
-
-    .h5 {
-      font-size: 16px;
-      margin: 0;
+    /* List Icon */
+    .list-icon {
+      display: inline-block;
+      width: 1em;
+      margin: 0.375em 0.5em 0 0;
     }
 
     /* Promo Box */
@@ -337,16 +325,6 @@
       display: block;
     }
 
-    .promo-box-content h2 {
-      color: #3d247a;
-      margin-bottom: 15px;
-    }
-
-    .promo-box-content p {
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-
     .promo-box-btn {
       background: #542E91;
       color: #fff;
@@ -358,12 +336,12 @@
       font-weight: 600;
       display: inline-block;
       transition: background 0.2s ease;
-      text-decoration: none;
+      text-decoration: none !important;
     }
 
     .promo-box-btn:hover {
       background: #4b287f;
-      color: #fff;
+      color: #fff !important;
     }
 
     @media (max-width: 900px) {
@@ -378,20 +356,20 @@
       .promo-box-image img {
         width: 160px;
       }
-      .promo-box-btn {
+      .promo-box-content a button {
         width: 100%;
       }
     }
 
+    /* Last Updated */
     .lastupdated {
       opacity: 0.7;
-      font-size: 14px;
     }
 
     hr {
+      border: none;
+      border-top: 1px solid #ddd;
       margin: 30px 0;
-      border: 0;
-      border-top: 1px solid #eee;
     }
 
     section {
@@ -401,24 +379,18 @@
 </head>
 <body>
   <div class="hx-page-content">
+
     <!-- Hero Section -->
-    <section style="padding: 40px 0;">
+    <section>
       <h1 class="display-4 text-primary">Save 10% on Holiday Extras Travel Insurance</h1>
       <h2 class="text-primary">Trusted by Millions of Travellers <a href="https://www.holidayextras.com/insurance-search.html">Cover from 10p per day**</a></h2>
 
-      <div style="text-align: center; margin: 30px 0;">
-        <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">
-          <span>Get Quote</span>
-          <i class="fa-solid fa-chevron-right"></i>
-        </a>
-      </div>
+      <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">Get a Quote</a>
 
-      <p style="text-align: center;">Get a quote in under 2 minutes online — or call our UK team on <strong>0333 038 9635</strong> (Mon–Fri 9-8, Sat-Sun 9-5).</p>
-    </section>
+      <p>Get a quote in under 2 minutes online — or call our UK team on 0333 038 9635 (Mon–Fri 9-8, Sat-Sun 9-5).</p>
 
-    <!-- Promise Cards Section -->
-    <section>
       <h2 class="mb-4 h1">Let us look after you. We Promise:</h2>
+
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="panel" style="border:0;">
@@ -436,6 +408,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="panel" style="border:0;">
             <div class="image position-relative">
@@ -452,6 +425,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="panel" style="border:0;">
             <div class="image position-relative">
@@ -471,7 +445,7 @@
       </div>
     </section>
 
-    <!-- Price Match Promise Promo Box -->
+    <!-- Price Match Promise -->
     <section>
       <div class="promo-box-container">
         <div class="promo-box-image">
@@ -480,10 +454,13 @@
         <div class="promo-box-content">
           <h2>Price Match Promise</h2>
           <p>
-            Found the same policy cheaper somewhere else? No problem, just get in touch, and we'll happily match it with our <strong>Price Match Promise</strong>.
+            Found the same policy cheaper somewhere else? No problem, just get in
+            touch, and we'll happily match it with our
+            <strong>Price Match Promise</strong>.
           </p>
           <p>
-            That way, you can book with confidence, knowing you're getting the very best deal <em>and</em> our award-winning service.
+            That way, you can book with confidence, knowing you're getting the very
+            best deal <em>and</em> our award-winning service.
           </p>
           <a href="https://www.holidayextras.com/travel-insurance/price-match-promise.html" data-track-name="price_match_promo" data-track-value="insurance_home_price_match_cta">
             <button class="promo-box-btn">
@@ -494,38 +471,34 @@
       </div>
     </section>
 
-    <!-- Tailored Solution Section -->
+    <!-- Tailored Solution -->
     <section>
-      <div style="text-align: center; margin: 30px 0;">
-        <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">
-          <span>Get Quote</span>
-          <i class="fa-solid fa-chevron-right"></i>
-        </a>
-      </div>
+      <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">Get a Quote</a>
+
       <h2 class="h1">Your tailored solution for hassle-free adventures</h2>
       <p>Choosing the right travel insurance for your own personal needs is an important decision that can give you that all-too valuable peace of mind when travelling. That's why, at Holiday Extras we've put together three levels of cover that can be tailored specifically to your individual needs. You can choose to take out a Single or Annual policy on any level of insurance so finding the perfect policy is hassle-free.</p>
     </section>
 
-    <!-- Cover at a Glance Section -->
+    <!-- Cover at a Glance -->
     <section class="py-4">
       <h2 class="h1">Our cover at a glance</h2>
       <p>We have a wide range of policy levels and optional add-ons to personally customise your cover. Whether it's gadgets, winter sports or extra sporting activities, your cover is as unique as you.</p>
     </section>
 
-    <!-- Cover Level Cards -->
+    <!-- Coverage Levels -->
     <section>
       <div class="row">
-        <!-- Silver Card -->
+        <!-- Silver Cover -->
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="panel panel-body shadow-strong" style="border:0;">
             <div class="position-relative">
               <a href="https://www.holidayextras.com/insurance-search.html">
-                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/silver.png" alt="Silver Cover"/>
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/silver.png" alt="Silver Cover" />
               </a>
             </div>
             <div class="py-3">
               <h3><a href="https://www.holidayextras.com/insurance-search.html">Silver Cover</a></h3>
-              <div class="d-flex flex-column align-items-start mb-3" style="margin-top: 15px;">
+              <div class="d-flex flex-column align-items-start mb-3">
                 <span class="pill h5 text-warning mt-0 mb-2">Defaqto 4* Rated</span>
                 <span class="pill h5 text-primary mt-0">Best Insurance Provider 2025</span>
               </div>
@@ -546,17 +519,17 @@
           </div>
         </div>
 
-        <!-- Gold Card -->
+        <!-- Gold Cover -->
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="panel panel-body shadow-stronger" style="border:0;">
             <div class="position-relative">
               <a href="https://www.holidayextras.com/insurance-search.html">
-                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/gold.png" alt="Gold Cover"/>
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/gold.png" alt="Gold Cover" />
               </a>
             </div>
             <div class="py-3">
               <h3><a href="https://www.holidayextras.com/insurance-search.html">Gold Cover</a></h3>
-              <div class="d-flex flex-column align-items-start mb-3" style="margin-top: 15px;">
+              <div class="d-flex flex-column align-items-start mb-3">
                 <span class="pill h5 text-warning mt-0 mb-2">Defaqto 5* Rated</span>
                 <span class="pill h5 text-primary mt-0">Best Insurance Provider 2025</span>
               </div>
@@ -580,17 +553,17 @@
           </div>
         </div>
 
-        <!-- Bronze Card -->
+        <!-- Bronze Cover -->
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="panel panel-body shadow" style="border:0;">
             <div class="position-relative">
               <a href="https://www.holidayextras.com/insurance-search.html">
-                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/bronze.png" alt="Bronze Cover"/>
+                <img loading="lazy" class="w-100" src="https://dmy0b9oeprz0f.cloudfront.net/holidayextras.co.uk/ppc-insurance/bronze.png" alt="Bronze Cover" />
               </a>
             </div>
             <div class="py-3">
               <h3><a href="https://www.holidayextras.com/insurance-search.html">Bronze Cover</a></h3>
-              <div class="d-flex flex-column align-items-start mb-3" style="margin-top: 15px;">
+              <div class="d-flex flex-column align-items-start mb-3">
                 <span class="pill h5 text-warning mt-0 mb-2">Defaqto 3* Rated</span>
                 <span class="pill h5 text-primary mt-0">Best Insurance Provider 2025</span>
               </div>
@@ -612,21 +585,22 @@
         </div>
       </div>
 
-      <div style="text-align: center; margin: 30px 0;">
-        <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">
-          <span>Get Quote</span>
-          <i class="fa-solid fa-chevron-right"></i>
-        </a>
-      </div>
+      <a href="https://www.holidayextras.com/insurance-search.html" class="hx-cta-btn-1">Get a Quote</a>
 
       <div class="lastupdated"></div>
       <hr>
 
-      <!-- Disclaimers -->
-      <p style="font-size: 16px;">*Policies must be purchased by 31st December 2025 to qualify for the 10% discount. Offers may be withdrawn or changed without notice. 10% off applies to the base rate of travel insurance and additional options added during the booking process and does not apply to any additional premiums for any pre-existing medical condition(s).</p>
-      <p style="font-size: 16px;">**10p per day lead price is based on an individual traveller with an average age of 44 travelling to Europe Inc on a bronze annual policy. Lead price does not include any medical premiums or additional upgrades. Price correct as of 21/01/2026.</p>
+      <!-- Terms and Conditions -->
+      <p style="font-size: 16px;">
+        *Policies must be purchased by 31st December 2025 to qualify for the 10% discount.
+        Offers may be withdrawn or changed without notice. 10% off applies to the base rate of travel insurance and additional options added during the booking process and does not apply to any additional premiums for any pre-existing medical condition(s).
+      </p>
+      <p style="font-size: 16px;">
+        **10p per day lead price is based on an individual traveller with an average age of 44 travelling to Europe Inc on a bronze annual policy. Lead price does not include any medical premiums or additional upgrades. Price correct as of 21/01/2026.
+      </p>
       <p style="font-size: 16px;"><i>***Or as specified on your schedule.</i></p>
     </section>
+
   </div>
 </body>
 </html>
